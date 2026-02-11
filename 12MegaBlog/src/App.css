@@ -1,0 +1,10 @@
+/* ===== GLOBAL LAYOUT FIX (SAFE) ===== */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Prevent weird overflow gaps */
+body {
+  min-height: 100vh;
+}

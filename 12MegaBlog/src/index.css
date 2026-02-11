@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* ===== GLOBAL LAYOUT FIX (SAFE) ===== */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Prevent weird overflow gaps */
+body {
+  min-height: 100vh;
+}
+
+/* ===== PASSWORD VISIBILITY FIX ===== */
+input[type="password"],
+input[type="text"] {
+  color: #0f172a; /* slate-900 */
+  background-color: #ffffff;
+}
+
+/* When browser autofill happens */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #0f172a;
+}
+
+input[type="Email"],
+input[type="text"] {
+  color: #0f172a; /* slate-900 */
+  background-color: #ffffff;
+}
+
+/* When browser autofill happens */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #0f172a;
+}
